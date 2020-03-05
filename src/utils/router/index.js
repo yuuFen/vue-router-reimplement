@@ -1,17 +1,3 @@
-# 简单的 vue-router 
-
-> 没有处理嵌套（递归），没有做如大小写处理的鲁棒优化。
-
-## 预览
-```
-yarn install
-yarn serve
-```
-
-## 实现
-
-```js
-// install 时获取
 let Vue
 
 // hash 改变 => current (响应式)改变 => router-view 的 render 改变
@@ -94,49 +80,3 @@ VueRouter.install = function(_Vue) {
     },
   })
 }
-```
-
-## 分析
-
-### 使用场景
-
-```js
-import Vue from 'vue'
-import VueRouter from '../utils/router'
-
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Main from '../views/Main.vue'
-
-Vue.use(VueRouter)
-
-export default new VueRouter({
-  routes: [
-    { path: '/', component: Home },
-    { path: '/main', component: Main },
-    { path: '/about', component: About },
-  ],
-})
-```
-
-```js
-// ...
-
-import router from './router'
-
-new Vue({
-  router,
-  render: (h) => h(App),
-}).$mount('#app')
-```
-
-```html
-    <router-link to="/">Home</router-link>
-    <router-link to="/main">Main</router-link>
-    <router-link to="/about">About</router-link>
-    <router-view></router-view>
-```
-
-### 目标
-
-见源码
