@@ -1,6 +1,10 @@
-# 简单的 vue-router 
+# 超级化简版 vue-router 
 
-> 没有考虑嵌套，没有做如大小写处理的鲁棒优化。
+> 原版实现更更更更值得学习
+>
+> [vue-router](https://github.com/vuejs/vue-router)
+>
+> [router-view](https://github.com/vuejs/vue-router/blob/dev/src/components/view.js)
 
 ## 预览
 ```
@@ -136,7 +140,3 @@ new Vue({
     <router-link to="/about">About</router-link>
     <router-view></router-view>
 ```
-
-### 目标
-
-见源码
