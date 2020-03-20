@@ -1,5 +1,7 @@
 # 超级化简版 vue-router 
 
+> [详见博客](https://yuufen.com/blog/post/8pW7fVIsz/)
+> 
 > 原版实现更更更更值得学习
 >
 > [vue-router](https://github.com/vuejs/vue-router)
